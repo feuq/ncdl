@@ -1,10 +1,10 @@
-import { store } from "js/main.js";
-import { embed } from "js/util.js";
-import { score } from "js/score.js";
-import { fetchEditors, fetchList } from "js/content.js";
+import { store } from "../main.js";
+import { embed } from "../util.js";
+import { score } from "../score.js";
+import { fetchEditors, fetchList } from "../content.js";
 
-import Spinner from "js/components/Spinner.js";
-import LevelAuthors from "js/components/List/LevelAuthors.js";
+import Spinner from "../components/Spinner.js";
+import LevelAuthors from "../components/List/LevelAuthors.js";
 
 const roleIconMap = {
     owner: "crown",
