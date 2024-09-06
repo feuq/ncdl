@@ -14,11 +14,15 @@ export function score(rank, percent, minPercent) {
     if (rank > 58) {
         return 0;
     }
-    /*if (rank > 75 && percent < 100) {
+    /*
+    if (rank > 75 && percent < 100) {
         return 0;
-    }*/
+    }
     
     let score = (-24.9975*Math.pow(rank-1, 0.4) + 200) *
+        ((percent - (minPercent - 1)) / (100 - (minPercent - 1)) * 2.5);
+    */
+    let score = (-24.9975*Math.pow(rank-1, 0.4) + 50) *
         ((percent - (minPercent - 1)) / (100 - (minPercent - 1)) * 2.5);
 
     score = Math.max(0, score);
